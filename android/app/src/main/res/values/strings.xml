@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CityQuest</string>
+    <string name="realization_place">Место проведения</string>
+    <string name="open">Открыть</string>
+    <string name="close">Закрыть</string>
+    <string name="control_points">Контрольные точки</string>
+    <string name="description">Описание</string>
+    <string name="on_map">На карте</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="list_small_image_size">32dp</dimen>
+    <dimen name="list_image_size">64dp</dimen>
+    <dimen name="rating_bar_height">16dp</dimen>
+    <dimen name="inline_icon_size">12dp</dimen>
+
+    <dimen name="textSizeSmall">12sp</dimen>
+    <dimen name="textSizeSecondary">14sp</dimen>
+    <dimen name="textSizeNormal">16sp</dimen>
+    <dimen name="textSizeMedium">20sp</dimen>
+    <dimen name="textSizeLarge">24sp</dimen>
+
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="big_margin">16dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+</resources>

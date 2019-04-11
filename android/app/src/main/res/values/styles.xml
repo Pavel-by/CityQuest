@@ -1,0 +1,40 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/primaryBackground</item>
+    </style>
+
+    <style name="ToolbarThemeOverlay" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/toolbarContentColor</item>
+    </style>
+
+    <style name="QuestTagGroupPale" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0dp</item>
+        <item name="atg_textColor">@color/textColorSecondary</item>
+        <item name="atg_horizontalPadding">@dimen/normal_padding</item>
+        <item name="atg_borderColor">@color/backgroundColorHighlight</item>
+        <item name="atg_verticalPadding">2dp</item>
+        <item name="atg_backgroundColor">@color/transparent</item>
+        <item name="atg_textSize">@dimen/textSizeSecondary</item>
+    </style>
+
+    <style name="QuestTagGroupLocations" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0dp</item>
+        <item name="atg_textColor">@color/colorPrimaryDark</item>
+        <item name="atg_horizontalPadding">@dimen/normal_padding</item>
+        <item name="atg_borderColor">@color/backgroundColorHighlight</item>
+        <item name="atg_verticalPadding">@dimen/small_padding</item>
+        <item name="atg_backgroundColor">@color/transparent</item>
+        <item name="atg_pressedBackgroundColor">@color/backgroundColorHighlight</item>
+        <item name="atg_textSize">@dimen/textSizeSecondary</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

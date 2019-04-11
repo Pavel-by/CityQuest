@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/big_padding"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_gravity="top"
+            android:layout_weight="0"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:orientation="vertical"
+                  android:layout_weight="1">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/textSizeNormal"
+                  android:ellipsize="end"
+                  android:lines="1"
+                  android:id="@+id/name"/>
+        <me.gujun.android.taggroup.TagGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tags"
+                style="@style/QuestTagGroupPale"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_weight="0">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include layout="@layout/view_points_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"/>
+            <include layout="@layout/view_locations_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"/>
+        </FrameLayout>
+        <RatingBar android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:theme="@style/RatingBarTheme"
+                   style="?attr/ratingBarStyleSmall"
+                   android:id="@+id/rating"
+                   android:numStars="5"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/big_padding"
+    android:paddingTop="@dimen/normal_padding"
+    android:paddingEnd="@dimen/big_padding"
+    android:paddingBottom="@dimen/normal_padding"
+    android:background="@drawable/list_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/list_small_image_size"
+        android:layout_height="@dimen/list_small_image_size"
+        android:layout_gravity="top"
+        android:src="@drawable/icon_location_accent"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:padding="@dimen/small_padding"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/locations_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/textSizeSecondary"
+        android:textColor="@color/textColorPrimary"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_margin"
+        android:textSize="@dimen/textSizeSecondary"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/action_text"
+        android:text="@string/on_map"/>
+
+</LinearLayout>
