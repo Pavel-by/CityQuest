@@ -9,8 +9,8 @@
         android:orientation="horizontal">
 
     <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/list_image_size"
+            android:layout_height="@dimen/list_image_size"
             android:id="@+id/icon"
             android:layout_marginEnd="@dimen/normal_margin"
             android:layout_gravity="top"
@@ -27,7 +27,7 @@
                   android:ellipsize="end"
                   android:lines="1"
                   android:id="@+id/name"/>
-        <me.gujun.android.taggroup.TagGroup
+        <com.cityquest.hackathon.cityquest.views.UnclickableTagGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tags"
@@ -47,7 +47,8 @@
             <include layout="@layout/view_points_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start|center_vertical"/>
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginEnd="@dimen/small_margin"/>
             <include layout="@layout/view_locations_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

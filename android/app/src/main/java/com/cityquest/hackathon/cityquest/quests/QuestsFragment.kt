@@ -7,13 +7,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.cityquest.hackathon.cityquest.BaseFragment
+import com.cityquest.hackathon.cityquest.QuestsApp
 import com.cityquest.hackathon.cityquest.R
 import com.cityquest.hackathon.cityquest.quests.quest_info.QuestInfoActivity
 import com.cityquest.hackathon.cityquest.quests.storage.Quest
 import com.cityquest.hackathon.cityquest.quests.storage.QuestsService
 
 
-class QuestsFragment: Fragment() {
+class QuestsFragment: BaseFragment() {
     lateinit var recycler: RecyclerView
     lateinit var adapter: QuestsRVA
     var listListener = object: QuestsClickListener {
@@ -34,6 +36,10 @@ class QuestsFragment: Fragment() {
         recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(context)
 
-        adapter.setQuests(QuestsService.instance.getQuests())
+        adapter.setQuests(QuestsService.instance.quests)
+    }
+
+    override fun getTitle(): String {
+        return QuestsApp.instance.getString(R.string.quests)
     }
 }

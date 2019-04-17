@@ -1,7 +1,6 @@
 package com.cityquest.hackathon.cityquest.quests
 
 import android.graphics.drawable.Drawable
-import android.nfc.Tag
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +11,8 @@ import android.widget.TextView
 import com.cityquest.hackathon.cityquest.R
 import com.cityquest.hackathon.cityquest.quests.storage.Quest
 import me.gujun.android.taggroup.TagGroup
+import kotlin.random.Random
+import kotlin.random.nextUInt
 
 interface QuestsClickListener {
     fun onClick(v: View, index: Int, quest: Quest)
@@ -38,12 +39,15 @@ class QuestsRVA : RecyclerView.Adapter<QuestsRVA.QuestViewHolder>() {
 
     override fun onBindViewHolder(holder: QuestViewHolder, index: Int) {
         val quest = quests.get(index)
-        holder.icon.setImageDrawable(icon)
+        holder.icon.setImageDrawable(
+            if (quest.icon != null) quest.icon!!
+            else icon
+        )
         holder.name.text = quest.name
         holder.points.text = quest.points.toString()
         holder.rating.rating = quest.rating
-        holder.tags.setTags(quest.tags)
-        holder.locationsCount.text = quest.locations.size.toString()
+        holder.tags.setTags(quest.types + quest.tags)
+        holder.locationsCount.text = Random.nextInt(1, 10).toString()
         holder.itemView.setOnClickListener{
             if (listener != null) listener!!.onClick(it, index, quest)
         }
@@ -77,7 +81,7 @@ class QuestsRVA : RecyclerView.Adapter<QuestsRVA.QuestViewHolder>() {
             icon = v.findViewById(R.id.icon)
             name = v.findViewById(R.id.name)
             tags = v.findViewById(R.id.tags)
-            points = v.findViewById(R.id.points_text)
+            points = v.findViewById(R.id.points_count_text)
             rating = v.findViewById(R.id.rating)
             locationsCount = v.findViewById(R.id.locations_count_text)
         }

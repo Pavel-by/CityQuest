@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:tools="http://schemas.android.com/tools"
-      tools:showIn="navigation_view">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
-                android:id="@+id/nav_camera"
-                android:title="Import"/>
+            android:id="@+id/quests"
+            android:title="@string/quests"
+            android:icon="@drawable/icon_search"/>
         <item
-                android:id="@+id/nav_gallery"
-                android:title="Gallery"/>
+            android:id="@+id/my_quests"
+            android:title="@string/my_quests"
+            android:icon="@drawable/icon_list_done"/>
         <item
-                android:id="@+id/nav_slideshow"
-                android:title="Slideshow"/>
-        <item
-                android:id="@+id/nav_manage"
-                android:title="Tools"/>
+            android:id="@+id/leader_boards"
+            android:title="@string/leader_boards"
+            android:icon="@drawable/icon_leader_board"/>
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                    android:id="@+id/nav_share"
-                    android:title="Share"/>
-            <item
-                    android:id="@+id/nav_send"
-                    android:title="Send"/>
-        </menu>
-    </item>
+    <group>
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings"
+            android:icon="@drawable/icon_settings" />
+        <item
+            android:id="@+id/about_app"
+            android:title="@string/about_app"
+            android:icon="@drawable/icon_info"/>
+    </group>
 
 </menu>

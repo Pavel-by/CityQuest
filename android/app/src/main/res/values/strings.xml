@@ -1,9 +1,25 @@
 <resources>
-    <string name="app_name">CityQuest</string>
+    <string name="app_name">Властелин города</string>
     <string name="realization_place">Место проведения</string>
     <string name="open">Открыть</string>
     <string name="close">Закрыть</string>
     <string name="control_points">Контрольные точки</string>
     <string name="description">Описание</string>
     <string name="on_map">На карте</string>
+    <string name="not_passed">Не пройден</string>
+    <string name="quests">Квесты</string>
+    <string name="info_about_quest">Информация о квесте</string>
+    <string name="map">Карта</string>
+    <string name="profile">Профиль</string>
+    <string name="leader_boards">Таблица лидеров</string>
+    <string name="my_quests">Мои квесты</string>
+    <string name="settings">Настройки</string>
+    <string name="about_app">О приложении</string>
+    <string name="login">Войти</string>
+    <string name="awards">Награды</string>
+    <string name="current_quest">Текущий квест</string>
+
+    <string name="server_connection_error">Ошибка соединения с сервером</string>
+
+    <string name="google_maps_api_key">AIzaSyC8Ua42BmTcsmGTgSzEIZy-CuVp91tYuhs</string>
 </resources>
